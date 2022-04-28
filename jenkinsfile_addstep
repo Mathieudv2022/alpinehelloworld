@@ -3,7 +3,7 @@ pipeline {
        IMAGE_NAME = "alpinehelloworld"
        IMAGE_TAG = "latest"
        DOCKERHUB_ID = "matt2022dockertp"
-       DOCKERHUB_PASSWORD = "MABB60002022"
+       DOCKERHUB_PASSWORD = credentials('MAB-DOCKERMDP')
        
        STAGING = "matt2022dockertp-staging"
        PRODUCTION = "matt2022dockertp-production"
