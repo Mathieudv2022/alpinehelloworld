@@ -95,16 +95,9 @@ pipeline {
           HEROKU_API_KEY = credentials('heroku_api_key')
       }
       
-        post {
-    always {
-      script {
-        slackNotifier currentBuild.result
-      }
-    }  
-  }
+
       
-      
-      
+     
       steps {
           script {
             sh '''
@@ -117,4 +110,14 @@ pipeline {
         }
      }
   }
+  
+          post {
+    always {
+      script {
+        slackNotifier currentBuild.result
+      }
+    }  
+  }
+      
+  
 }
