@@ -7,7 +7,7 @@ pipeline {
        
        STAGING = "matt2022dockertp-staging"
        PRODUCTION = "matt2022dockertp-production"
-       $DOCKERHUB_ID
+       
      }
      agent none
      stages {
